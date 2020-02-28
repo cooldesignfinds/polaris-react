@@ -12,11 +12,14 @@ $focus-state-box-shadow-color: rgba(92, 106, 196, 0.8);
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: var(--p-border-radius-wide, 0);
-  padding-left: 0;
-  padding-bottom: 0;
+  padding: 0;
   border-bottom: border();
   list-style: none;
+
+  &.newDesignLanguage {
+    padding: spacing(tight);
+    padding-bottom: 0;
+}
 }
 
 .fitted {

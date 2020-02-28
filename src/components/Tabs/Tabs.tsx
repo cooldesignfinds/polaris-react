@@ -116,6 +116,7 @@ class TabsInner extends React.PureComponent<CombinedProps, State> {
       styles.Tabs,
       fitted && styles.fitted,
       disclosureActivatorVisible && styles.fillSpace,
+      newDesignLanguage && styles.newDesignLanguage,
     );
 
     const activatorClassName = classNames(styles.Title, styles.activator);
