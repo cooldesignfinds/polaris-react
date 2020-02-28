@@ -97,6 +97,7 @@ $focus-state-box-shadow-color: rgba(92, 106, 196, 0.8);
 
     .Title {
       @include text-emphasis-normal;
+      @include focus-ring($style: 'focused');
       background: var(--p-surface-pressed);
       border-bottom: $border-bottom-height solid
         var(--p-override-transparent, color('indigo', 'light'));
@@ -136,6 +137,7 @@ $focus-state-box-shadow-color: rgba(92, 106, 196, 0.8);
 }
 
 .Title {
+  @include focus-ring;
   display: block;
   padding: var(
     --p-override-zero,
