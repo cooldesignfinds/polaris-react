@@ -678,7 +678,7 @@ describe('<ResourceItem />', () => {
     });
   });
 
-  describe('alignment', () => {
+  describe('verticalAlignment', () => {
     it('renders with default flex-start alignment if not provided', () => {
       const resourceItem = mountWithApp(<ResourceItem id={itemId} url={url} />);
 
@@ -687,9 +687,9 @@ describe('<ResourceItem />', () => {
       });
     });
 
-    it('renders with leading alignment', () => {
+    it('renders with leading vertical alignment', () => {
       const resourceItem = mountWithApp(
-        <ResourceItem id={itemId} url={url} alignment="leading" />,
+        <ResourceItem id={itemId} url={url} verticalAlignment="leading" />,
       );
 
       expect(resourceItem).toContainReactComponent('div', {
@@ -697,9 +697,9 @@ describe('<ResourceItem />', () => {
       });
     });
 
-    it('renders with center alignment', () => {
+    it('renders with center vertical alignment', () => {
       const resourceItem = mountWithApp(
-        <ResourceItem id={itemId} url={url} alignment="center" />,
+        <ResourceItem id={itemId} url={url} verticalAlignment="center" />,
       );
 
       expect(resourceItem).toContainReactComponent('div', {
@@ -707,9 +707,9 @@ describe('<ResourceItem />', () => {
       });
     });
 
-    it('renders with trailing alignment', () => {
+    it('renders with trailing vertical alignment', () => {
       const resourceItem = mountWithApp(
-        <ResourceItem id={itemId} url={url} alignment="trailing" />,
+        <ResourceItem id={itemId} url={url} verticalAlignment="trailing" />,
       );
 
       expect(resourceItem).toContainReactComponent('div', {
@@ -717,9 +717,9 @@ describe('<ResourceItem />', () => {
       });
     });
 
-    it('renders with stretch alignment', () => {
+    it('renders with stretch vertical alignment', () => {
       const resourceItem = mountWithApp(
-        <ResourceItem id={itemId} url={url} alignment="fill" />,
+        <ResourceItem id={itemId} url={url} verticalAlignment="fill" />,
       );
 
       expect(resourceItem).toContainReactComponent('div', {
@@ -727,9 +727,9 @@ describe('<ResourceItem />', () => {
       });
     });
 
-    it('renders with baseline alignment', () => {
+    it('renders with baseline vertical alignment', () => {
       const resourceItem = mountWithApp(
-        <ResourceItem id={itemId} url={url} alignment="baseline" />,
+        <ResourceItem id={itemId} url={url} verticalAlignment="baseline" />,
       );
 
       expect(resourceItem).toContainReactComponent('div', {

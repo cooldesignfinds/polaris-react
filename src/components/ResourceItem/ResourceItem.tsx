@@ -52,7 +52,7 @@ interface BaseProps {
   /** Content for the details area */
   children?: React.ReactNode;
   /** Adjust vertical alignment of elements */
-  alignment?: Alignment;
+  verticalAlignment?: Alignment;
 }
 
 interface PropsWithUrl extends BaseProps {
@@ -143,7 +143,7 @@ class BaseResourceItem extends React.Component<CombinedProps, State> {
       context: {selectable, selectMode, loading, resourceName},
       i18n,
       features: {newDesignLanguage},
-      alignment,
+      verticalAlignment,
     } = this.props;
 
     const {actionsMenuVisible, focused, focusedInner, selected} = this.state;
@@ -261,7 +261,8 @@ class BaseResourceItem extends React.Component<CombinedProps, State> {
 
     const containerClassName = classNames(
       styles.Container,
-      alignment && styles[variationName('alignment', alignment)],
+      verticalAlignment &&
+        styles[variationName('alignment', verticalAlignment)],
     );
 
     const containerMarkup = (
