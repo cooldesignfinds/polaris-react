@@ -5,7 +5,7 @@ $item-min-width: rem(50px);
 $item-vertical-padding: $item-min-height / 2;
 $border-bottom-height: border-width(thicker);
 $tab-separation-spacing: spacing(tight);
-$tab-item-margin-top: 0.1rem;
+$tab-item-margin-top: rem(1px);
 $focus-state-box-shadow-color: rgba(92, 106, 196, 0.8);
 
 .Tabs {
