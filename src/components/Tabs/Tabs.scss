@@ -17,8 +17,7 @@ $focus-state-box-shadow-color: rgba(92, 106, 196, 0.8);
   list-style: none;
 
   &.newDesignLanguage {
-    padding: spacing(tight);
-    padding-bottom: 0;
+    padding: $tab-separation-spacing $tab-separation-spacing / 2;
 }
 }
 
@@ -27,7 +26,6 @@ $focus-state-box-shadow-color: rgba(92, 106, 196, 0.8);
 
   .TabContainer {
     flex: 1 1 100%;
-    margin-left: var(--p-border-radius-wide, 0);
   }
 
   .Tab {
@@ -36,7 +34,6 @@ $focus-state-box-shadow-color: rgba(92, 106, 196, 0.8);
 
   .Title {
     width: 100%;
-    margin-left: 0;
     padding: spacing(tight) spacing();
   }
 
@@ -55,6 +52,10 @@ $focus-state-box-shadow-color: rgba(92, 106, 196, 0.8);
   display: flex;
   margin: 0;
   padding: 0;
+
+  &.newDesignLanguage {
+    padding: 0 $tab-separation-spacing / 2;
+}
 }
 
 .Tab {
@@ -68,7 +69,7 @@ $focus-state-box-shadow-color: rgba(92, 106, 196, 0.8);
   justify-content: center;
   width: 100%;
   min-width: 100%; // IE11 fix for overflowing flex items from parent container
-  margin-top: $tab-item-margin-top;
+  margin-top: 1px;
   margin-bottom: -1px;
   padding: var(--p-override-zero, 0 spacing());
   outline: none;
